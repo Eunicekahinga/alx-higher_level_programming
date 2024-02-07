@@ -12,12 +12,14 @@ class Square:
     def area(self):
         '''Returns current square area'''
 
-        return (self.__size ** 2)
+        return self.size ** 2
 
+    @property
     def size(self):
         '''Retrieves private instance attribute, size'''
         return self.__size
 
+    @size.setter
     def size(self, value):
         '''Property setter to set it'''
         if isinstance(value, int):

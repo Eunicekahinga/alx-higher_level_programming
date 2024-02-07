@@ -5,8 +5,9 @@
 class Square:
     """Size is a private instance attribute and is an int"""
 
-    def __init__ (self, size=0):
-        """Instantiation with optional size which is an int"""
+    def __init__(self, size=0):
+        """Initialization with optional size which is an int"""
+
         if isinstance(size, int):
             if size >= 0:
                 self.__size = size

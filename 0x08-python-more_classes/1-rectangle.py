@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''A class rectangle, defining a rectangle based on 0-rectangle.py'''
 
+
 class Rectangle:
     '''A class defining a rectangle'''
     def __init__(self, width=0, height=0):
@@ -31,7 +32,7 @@ class Rectangle:
 
         Raises:
             TypeError: if not int, with the message width must be an integer
-            ValueError: if value is less than 0 with the message width must be >= 0
+            ValueError: if value less than 0 with message width must be >= 0
         '''
 
         if not isinstance(value, int):
@@ -58,12 +59,12 @@ class Rectangle:
 
         Raises:
             TypeError: if not int, with the message height must be an integer
-            ValueError: if value is less than 0 with the message height must be >= 0
+            ValueError: if value less than 0 with message height must be >= 0
         '''
 
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        elif value< 0:
+        elif value < 0:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
